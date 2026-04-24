@@ -1,0 +1,21 @@
+@layer payload-default {
+  /* Grid layout block: hide Array “Collapse all / Show all” only when those two + clipboard exist. */
+  .grid-layout-regions
+    .array-field__header-actions:has(> :nth-child(3))
+    > li:nth-child(-n + 2) {
+    display: none;
+  }
+
+  /*
+    Source of the border: Payload’s Group field styles
+    node_modules/@payloadcms/ui/dist/fields/Group/index.scss → .group-field { border-bottom: ... }
+
+    Payload also clears it with .group-field--within-tab:last-child { border-bottom: 0 }, but
+    :last-child fails when React renders a hidden input (e.g. block id) after the last field,
+    so the visual “extra” line/space under the last Background group remains.
+  */
+  .render-fields > .field-type.group-field:last-of-type {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
