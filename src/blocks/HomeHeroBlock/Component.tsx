@@ -85,7 +85,7 @@ export const HomeHeroBlock: React.FC<HomeHeroBlockType> = ({
                     Primary Link
                     <ArrowRight size={20} />
                   </a>
-                  <a className="border-2 border-slate-200 bg-white px-8 py-4 rounded-xl font-bold">
+                  <a className="border-2 border-slate-200 bg-white px-8 py-4 rounded-xl font-bold text-foreground">
                     Secondary Link
                   </a>
                 </>

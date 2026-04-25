@@ -5,6 +5,7 @@ import { getCachedGlobal } from '@/utilities/getGlobals'
 import { getMediaUrl } from '@/utilities/getMediaUrl'
 
 export async function Footer() {
+  const headerData = await getCachedGlobal('header', 1)()
   const footerData = await getCachedGlobal('footer', 1)()
 
   const {
@@ -18,9 +19,9 @@ export async function Footer() {
     ctaButtonText,
     ctaLink,
     copyright,
-    navItems,
     legalLinks,
   } = footerData || {}
+  const navItems = headerData?.navItems
 
   return (
     <footer className="bg-white border-t border-slate-200 pt-20 pb-10 px-6">
@@ -81,16 +82,36 @@ export async function Footer() {
               Navigation
             </h4>
             <ul className="space-y-4 font-medium text-slate-600">
-              {navItems?.map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href={item.link?.url || '#'}
-                    className="hover:text-blue-800 transition-colors"
-                  >
-                    {item.link?.label}
-                  </Link>
-                </li>
-              ))}
+              {navItems?.map((item, i) => {
+                let href = '#'
+                if (item.link?.type === 'custom' && item.link.url) {
+                  href = item.link.url
+                } else if (item.link?.type === 'reference' && item.link.reference) {
+                  const ref = item.link.reference
+                  if (
+                    ref.relationTo === 'pages' &&
+                    typeof ref.value === 'object' &&
+                    ref.value &&
+                    'slug' in ref.value
+                  ) {
+                    href = `/${ref.value.slug}`
+                  } else if (
+                    ref.relationTo === 'posts' &&
+                    typeof ref.value === 'object' &&
+                    ref.value &&
+                    'slug' in ref.value
+                  ) {
+                    href = `/posts/${ref.value.slug}`
+                  }
+                }
+                return (
+                  <li key={i}>
+                    <Link href={href} className="hover:text-blue-800 transition-colors">
+                      {item.link?.label}
+                    </Link>
+                  </li>
+                )
+              })}
             </ul>
           </div>
 

@@ -66,7 +66,9 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
     >
       <div className="container px-6 flex justify-between items-center">
         <div className="flex items-center">
-          <img src="/assets/logo.png" alt="Logo" className="h-10 w-auto" />
+          <Link href="/">
+            <img src="/assets/logo.png" alt="Logo" className="h-10 w-auto" />
+          </Link>
         </div>
 
         <div className="hidden md:flex items-center gap-8">
