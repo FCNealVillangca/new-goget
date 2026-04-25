@@ -36,6 +36,12 @@
 @source inline("bg-success/30");
 @source inline("border-warning");
 @source inline("bg-warning/30");
+@source inline("opacity-10");
+@source inline("opacity-30");
+@source inline("opacity-50");
+@source inline("opacity-80");
+@source inline("bg-opacity-30");
+@source inline("bg-opacity-80");
 
 @theme {
   --breakpoint-sm: 40rem;

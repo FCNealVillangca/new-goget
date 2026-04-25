@@ -100,7 +100,7 @@ export const HomeBlock03Block: React.FC<HomeBlock03BlockProps> = ({
               </p>
               <div className="flex items-center gap-3 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
                 <span>{displayBeforeCard.speaker}</span>
-                <span className="opacity-30">•</span>
+                <span style={{ opacity: 0.3 }}>•</span>
                 <span>{displayBeforeCard.subtitle}</span>
               </div>
             </div>
@@ -115,7 +115,7 @@ export const HomeBlock03Block: React.FC<HomeBlock03BlockProps> = ({
               </p>
               <div className="flex items-center gap-3 text-[10px] font-bold text-primary uppercase tracking-widest">
                 <span>{displayAfterCard.speaker}</span>
-                <span className="opacity-30">•</span>
+                <span style={{ opacity: 0.3 }}>•</span>
                 <span>{displayAfterCard.subtitle}</span>
               </div>
             </div>
