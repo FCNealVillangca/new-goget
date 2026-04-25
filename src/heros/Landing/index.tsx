@@ -61,7 +61,7 @@ export const LandingHero: React.FC<Page['hero']> = ({
 
         {/* Right Image */}
         <div className="relative flex justify-center items-center order-1 md:order-2">
-          <div className="absolute w-[85%] h-[85%] bg-indigo-200/40 rounded-full blur-[80px] -z-10"></div>
+          <div className="absolute w-[85%] h-[85%] bg-indigo-200 rounded-full blur-[80px] -z-10"></div>
 
           <div className="relative w-full max-w-md transition-transform duration-700 hover:scale-[1.02]">
             <div className="relative w-full aspect-square rounded-full border-10 border-white shadow-[0_32px_80px_-15px_rgba(0,0,0,0.15)] overflow-hidden">

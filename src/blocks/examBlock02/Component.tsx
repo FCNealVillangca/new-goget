@@ -100,7 +100,7 @@ export const ExamBlock02: React.FC<ExamBlock02Props> = ({
 
           {/* Right Side: Exam Board Card */}
           <div className="relative">
-            <div className="bg-[#fafafa] rounded-[48px] p-8 md:p-14 border border-slate-50 shadow-2xl shadow-slate-100/50">
+            <div className="bg-[#fafafa] rounded-[48px] p-8 md:p-14 border border-slate-50 shadow-2xl">
               <h3 className="text-2xl font-serif text-slate-900 mb-10 text-center md:text-left">
                 {displayExamBoardsTitle}
               </h3>
@@ -109,7 +109,7 @@ export const ExamBlock02: React.FC<ExamBlock02Props> = ({
                 {displayExamBoards.map((board, idx) => (
                   <div
                     key={board.name || idx}
-                    className="bg-white p-6 rounded-2xl border border-slate-100/60 shadow-sm flex flex-col items-center justify-center text-center group hover:border-blue-200 transition-colors cursor-default"
+                    className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center justify-center text-center group hover:border-blue-200 transition-colors cursor-default"
                   >
                     <span className="text-xl font-black text-slate-800 mb-1">{board.name}</span>
                     <span className="text-[9px] font-bold text-slate-300 tracking-wider uppercase leading-none">
@@ -126,7 +126,7 @@ export const ExamBlock02: React.FC<ExamBlock02Props> = ({
             </div>
 
             {/* Decorative subtle glow */}
-            <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-50/20 blur-[100px] rounded-full pointer-events-none" />
+            <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-50 blur-[100px] rounded-full pointer-events-none" />
           </div>
         </main>
       </div>

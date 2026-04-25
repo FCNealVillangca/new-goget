@@ -110,7 +110,7 @@ export const AboutBlock01Block: React.FC<AboutBlock01BlockProps> = ({
                 <div className="space-y-4 max-w-lg">
                   <p className="text-lg md:text-xl text-slate-500 font-medium">{displaySubtitle}</p>
                   <p className="text-slate-500 leading-relaxed">{displayDescription}</p>
-                  <p className="text-slate-500 leading-relaxed font-bold border-l-4 border-red-500 pl-6 py-2 bg-red-50/50 rounded-r-lg">
+                  <p className="text-slate-500 leading-relaxed font-bold border-l-4 border-red-500 pl-6 py-2 bg-red-50 rounded-r-lg">
                     {displayHighlightText}
                   </p>
                 </div>
@@ -129,7 +129,7 @@ export const AboutBlock01Block: React.FC<AboutBlock01BlockProps> = ({
                   return (
                     <div
                       key={index}
-                      className="group relative bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-xl shadow-slate-200/50 overflow-hidden"
+                      className="group relative bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-xl overflow-hidden"
                     >
                       <div className="relative z-10 flex flex-col h-full justify-center text-center items-center gap-6">
                         <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-slate-400 group-hover:bg-blue-50 group-hover:text-[#1e40af] transition-colors">
@@ -191,7 +191,7 @@ export const AboutBlock01Block: React.FC<AboutBlock01BlockProps> = ({
                       'group relative p-8 rounded-[2.5rem] overflow-hidden shadow-2xl',
                       isBlue
                         ? 'bg-[#1e40af] text-white shadow-blue-200'
-                        : 'bg-white border border-slate-100 shadow-slate-200/50 flex flex-col justify-between',
+                        : 'bg-white border border-slate-100 flex flex-col justify-between',
                     )}
                   >
                     <div className="relative z-10 space-y-6">

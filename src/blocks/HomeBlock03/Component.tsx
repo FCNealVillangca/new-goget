@@ -88,7 +88,7 @@ export const HomeBlock03Block: React.FC<HomeBlock03BlockProps> = ({
           {/* Left Column: Comparison Cards */}
           <div className="relative h-[480px] md:h-[520px] flex items-center justify-center order-2 lg:order-1">
             {/* Decorative background element */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-50/50 rounded-full blur-3xl -z-10" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-50 rounded-full blur-3xl -z-10" />
 
             {/* Before Card */}
             <div className="absolute top-0 left-0 w-full max-w-[400px] bg-slate-50 rounded-3xl p-10 border border-slate-200 shadow-sm">
@@ -106,7 +106,7 @@ export const HomeBlock03Block: React.FC<HomeBlock03BlockProps> = ({
             </div>
 
             {/* After Card */}
-            <div className="absolute bottom-0 right-0 w-full max-w-[400px] bg-white rounded-3xl p-10 shadow-lg border border-primary/20 z-10">
+            <div className="absolute bottom-0 right-0 w-full max-w-[400px] bg-white rounded-3xl p-10 shadow-lg border border-primary z-10">
               <div className="inline-block bg-black text-white text-[10px] font-bold px-2.5 py-1 rounded mb-8 uppercase tracking-widest">
                 {displayAfterCard.label}
               </div>
@@ -158,7 +158,7 @@ export const HomeBlock03Block: React.FC<HomeBlock03BlockProps> = ({
             </div>
 
             <div className="pt-10 space-y-6">
-              <button className="bg-primary shadow-lg shadow-primary/20 text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-primary/80 transition-all flex items-center gap-3 active:scale-95 group">
+              <button className="bg-primary shadow-lg text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-primary/80 transition-all flex items-center gap-3 active:scale-95 group">
                 {displayButtonText}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>

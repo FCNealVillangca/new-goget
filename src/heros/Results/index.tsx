@@ -68,7 +68,7 @@ export const ResultsHero: React.FC<Page['hero']> = ({ media }) => {
         </div>
 
         {/* Floating Abstract Accents */}
-        <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-blue-50/40 blur-[100px] -z-10 rounded-full" />
+        <div className="absolute top-1/2 left-0 -translate-y-1/2 w-64 h-64 bg-blue-50 blur-[100px] -z-10 rounded-full" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-slate-50 group blur-[120px] -z-10 rounded-full" />
       </div>
     </section>

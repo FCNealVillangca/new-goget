@@ -83,8 +83,8 @@ export const ExamSupportHero: React.FC<Page['hero']> = ({ media }) => {
             </div>
 
             {/* Background accents */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-200/20 rounded-full blur-3xl -mr-16 -mt-16" />
-            <div className="absolute bottom-0 left-0 w-32 h-32 bg-red-200/20 rounded-full blur-3xl -ml-16 -mb-16" />
+            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-200 rounded-full blur-3xl -mr-16 -mt-16" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-red-200 rounded-full blur-3xl -ml-16 -mb-16" />
           </div>
         </div>
       </div>

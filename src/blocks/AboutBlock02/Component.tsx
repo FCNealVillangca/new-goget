@@ -111,7 +111,7 @@ export const AboutBlock02Block: React.FC<AboutBlock02BlockProps> = ({
                     'group p-10 rounded-[3rem] flex flex-col items-center text-center space-y-8 transition-transform hover:translate-y-[-8px]',
                     isBlue
                       ? 'bg-[#1e40af] shadow-2xl shadow-blue-200 text-white relative overflow-hidden'
-                      : 'bg-white border border-slate-100 shadow-xl shadow-slate-200/40',
+                      : 'bg-white border border-slate-100 shadow-xl',
                   )}
                 >
                   {isBlue && (
